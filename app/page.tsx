@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Leeftijd from "./components/Leeftijd";
+import ContactForm from "./components/Contactform";
 
 export default function GymSite() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
@@ -280,26 +281,7 @@ const scrollToSection = (id: string) => {
                 ></iframe>
               </div>
 
-              <form className="space-y-4">
-                <input
-                  type="text"
-                  placeholder="NAAM"
-                  className=" font-coolvetica w-full bg-gray-900 border-2 border-gray-700 p-3 font-bold focus:border-yellow-400 focus:outline-none transition"
-                />
-                <input
-                  type="email"
-                  placeholder="EMAIL"
-                  className="font-coolvetica w-full bg-gray-900 border-2 border-gray-700 p-3 font-bold focus:border-yellow-400 focus:outline-none transition"
-                />
-                <textarea
-                  placeholder="BERICHT"
-                  rows={5}
-                  className="font-coolvetica w-full bg-gray-900 border-2 border-gray-700 p-3 font-bold focus:border-yellow-400 focus:outline-none transition resize-none"
-                />
-                <button className="w-full bg-yellow-400 text-black py-3 font-black text-lg tracking-wider hover:bg-white transition">
-                  STUUR
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
