@@ -25,6 +25,8 @@ const scrollToSection = (id: string) => {
   const sections = ["home", "over", "aanbod", "openingsuren", "contact"];
 
   return (
+    
+
     <div className="min-h-screen bg-black text-white font-sans">
       {/* Header/Nav */}
       <header className="sticky top-0 z-50 bg-black">
