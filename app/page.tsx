@@ -116,7 +116,7 @@ const scrollToSection = (id: string) => {
           <div className="flex flex-col md:flex-row items-start gap-12">
             {/* Linker kolom */}
             <div className="md:w-1/2 space-y-6 text-lg leading-relaxed font-coolvetica">
-              <p>Mijn naam is Stijn Dankers en ik ben {Leeftijd()} oud.</p>
+              <p>Mijn naam is Stijn Dankers en ik ben {Leeftijd()} jaar oud.</p>
               <p>
                 Al sinds mijn 13de ben ik gepassioneerd door fitness en een gezonde
                 levensstijl. Hierdoor ben ik mezelf door de jaren heen verder gaan
@@ -161,11 +161,13 @@ const scrollToSection = (id: string) => {
           <h4 className="text-2xl sm:text-3xl font-black mb-6 font-coolvetica">ABONNEMENTEN</h4>
           <div className="grid gap-6 md:grid-cols-2 mb-12 font-coolvetica">
             {[
-              { name: "1 JAAR", price: "€XXX" },
-              { name: "6 MAANDEN", price: "€XXX" },
-              { name: "3 MAANDEN", price: "€XXX" },
-              { name: "1 MAAND", price: "€XXX" },
-              { name: "10-BEURTENKAART", price: "€XXX", colSpan: 2 },
+              { name: "1 JAAR", price: "€450" },
+              { name: "6 MAANDEN", price: "€250" },
+              { name: "3 MAANDEN", price: "€150" },
+              { name: "1 MAAND", price: "€50" },
+              { name: "1STE BEURT", price: "GRATIS", colSpan: 2 },
+              { name: "10-BEURTENKAART", price: "€70", colSpan: 2 },
+              { name: "20-BEURTENKAART", price: "€120", colSpan: 2 },
             ].map((plan, idx) => (
               <div
                 key={idx}
@@ -182,10 +184,10 @@ const scrollToSection = (id: string) => {
           <h4 className="text-2xl sm:text-3xl font-black mb-6">PERSONAL COACHING</h4>
           <div className="grid gap-6 md:grid-cols-2 font-coolvetica">
             {[
-              { name: "20 LESSEN", price: "€XXX" },
-              { name: "10 LESSEN", price: "€XXX" },
-              { name: "5 LESSEN", price: "€XXX" },
-              { name: "1 LES", price: "€XXX" },
+              { name: "20 LESSEN", price: "€900" },
+              { name: "10 LESSEN", price: "€500" },
+              { name: "5 LESSEN", price: "€275" },
+              { name: "1 LES", price: "€60" },
             ].map((plan, idx) => (
               <div key={idx} className="border-4 border-gray-800 p-6">
                 <div className="flex justify-between">
